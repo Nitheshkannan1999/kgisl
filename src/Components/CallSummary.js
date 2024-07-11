@@ -12,7 +12,7 @@ import ClientEmotionAndTips from "./ClientEmotionAndTips";
 import ExpandedView from "./ExpandedView";
 
 const CallSummary = () => {
-  const [toolTipFlag, setToolTipFlag] = useState(false);
+  const [toolTipFlag, setToolTipFlag] = useState(true);
   const [showExpandedView, setExpandedView] = useState(false);
 
   const toggleExpandedView = () => {
