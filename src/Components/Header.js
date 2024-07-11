@@ -2,7 +2,7 @@ import React from "react";
 import "./styles/Header.scss";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 
-function Header() {
+const Header = () => {
   return (
     <header className="header">
       <div className="search-bar">
@@ -18,6 +18,6 @@ function Header() {
       </div>
     </header>
   );
-}
+};
 
 export default Header;
