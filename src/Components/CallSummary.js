@@ -8,11 +8,9 @@ import {
 } from "@mui/icons-material";
 import IconComponent from "./IconComponent";
 import TranscriptionSummary from "./TranscriptionSummary";
-import ClientEmotionAndTips from "./ClientEmotionAndTips";
-import ExpandedView from "./ExpandedView";
 
 const CallSummary = () => {
-  const [toolTipFlag, setToolTipFlag] = useState(true);
+  const [toolTipFlag, setToolTipFlag] = useState(false);
   const [showExpandedView, setExpandedView] = useState(false);
 
   const toggleExpandedView = () => {
@@ -48,7 +46,7 @@ const CallSummary = () => {
               highlight={highlight}
               onMouseEnter={onMouseEnter}
             />
-            {idx < 3 && <div className={`crossLine${idx + 1}`}></div>}
+            {idx < 3 && <div className="crossLine"></div>}
           </React.Fragment>
         ))}
       </div>
